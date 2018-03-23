@@ -1,0 +1,1397 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Mar 14 15:45:53 2018
+# Process ID: 22424
+# Log file: F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.runs/synth_1/mips_cpu.vds
+# Journal file: F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mips_cpu.tcl -notrace
+Command: synth_design -top mips_cpu -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+WARNING: [Synth 8-2507] parameter declaration becomes local in sel_bits_2_mux with formal parameter declaration list [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v:14]
+WARNING: [Synth 8-2611] redeclaration of ansi port myclk is not allowed [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v:27]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 255.523 ; gain = 78.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mips_cpu' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:3]
+	Parameter FREE1 bound to: 0 - type: integer 
+	Parameter D2 bound to: 5'b11111 
+	Parameter FREE2 bound to: 5'b00000 
+	Parameter v0_reg bound to: 5'b00010 
+	Parameter display_reg bound to: 5'b00100 
+INFO: [Synth 8-638] synthesizing module 'counter' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+	Parameter DATA_BITS bound to: 32 - type: integer 
+	Parameter MAX_VALUE bound to: -1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter' (1#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+WARNING: [Synth 8-350] instance 'sys_callout' of module 'counter' requires 8 connections, but only 6 given [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:98]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized0' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+	Parameter DATA_BITS bound to: 1 - type: integer 
+	Parameter MAX_VALUE bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized0' (1#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+WARNING: [Synth 8-350] instance 'halt_d' of module 'counter' requires 8 connections, but only 6 given [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:104]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized1' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+	Parameter DATA_BITS bound to: 16 - type: integer 
+	Parameter MAX_VALUE bound to: 16'b1111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized1' (1#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+WARNING: [Synth 8-350] instance 'totalcyc' of module 'counter' requires 8 connections, but only 5 given [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:105]
+INFO: [Synth 8-638] synthesizing module 'DVM' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DVM' (2#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v:23]
+WARNING: [Synth 8-350] instance 'next_pc' of module 'counter' requires 8 connections, but only 6 given [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:109]
+INFO: [Synth 8-638] synthesizing module 'IM' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/IM/IM.v:23]
+INFO: [Synth 8-256] done synthesizing module 'IM' (3#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/IM/IM.v:23]
+INFO: [Synth 8-638] synthesizing module 'NPC' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:3]
+INFO: [Synth 8-638] synthesizing module 'sel_bits_1_mux' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_1_mux.v:4]
+	Parameter DATA_BITS bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sel_bits_1_mux' (4#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_1_mux.v:4]
+INFO: [Synth 8-638] synthesizing module 'sel_bits_2_mux' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v:4]
+	Parameter DATA_BITS bound to: 32 - type: integer 
+	Parameter SEL_BITS bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sel_bits_2_mux' (5#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v:4]
+WARNING: [Synth 8-350] instance 'choose_NextPC' of module 'sel_bits_2_mux' requires 6 connections, but only 5 given [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized2' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+	Parameter DATA_BITS bound to: 16 - type: integer 
+	Parameter MAX_VALUE bound to: 16'b1111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized2' (5#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+WARNING: [Synth 8-350] instance 'unconditional_count' of module 'counter' requires 8 connections, but only 5 given [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized3' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+	Parameter DATA_BITS bound to: 16 - type: integer 
+	Parameter MAX_VALUE bound to: 16'b1111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized3' (5#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+WARNING: [Synth 8-350] instance 'conditional_count' of module 'counter' requires 8 connections, but only 5 given [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:76]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized4' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+	Parameter DATA_BITS bound to: 16 - type: integer 
+	Parameter MAX_VALUE bound to: 16'b1111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized4' (5#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+WARNING: [Synth 8-350] instance 'conditionalsucces_count' of module 'counter' requires 8 connections, but only 5 given [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:85]
+INFO: [Synth 8-256] done synthesizing module 'NPC' (6#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:3]
+WARNING: [Synth 8-350] instance 'npc' of module 'NPC' requires 12 connections, but only 11 given [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:113]
+INFO: [Synth 8-638] synthesizing module 'Zero_Ext_5to32' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/D_Ext/D_Ext.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Zero_Ext_5to32' (7#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/D_Ext/D_Ext.v:3]
+INFO: [Synth 8-638] synthesizing module 'Sign_Ext_16to32' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/D_Ext/D_Ext.v:11]
+INFO: [Synth 8-256] done synthesizing module 'Sign_Ext_16to32' (8#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/D_Ext/D_Ext.v:11]
+INFO: [Synth 8-638] synthesizing module 'sel_bits_2_mux__parameterized0' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v:4]
+	Parameter DATA_BITS bound to: 5 - type: integer 
+	Parameter SEL_BITS bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sel_bits_2_mux__parameterized0' (8#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v:4]
+INFO: [Synth 8-638] synthesizing module 'sel_bits_1_mux__parameterized0' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_1_mux.v:4]
+	Parameter DATA_BITS bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sel_bits_1_mux__parameterized0' (8#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_1_mux.v:4]
+INFO: [Synth 8-638] synthesizing module 'sel_bits_1_mux__parameterized1' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_1_mux.v:4]
+	Parameter DATA_BITS bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sel_bits_1_mux__parameterized1' (8#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_1_mux.v:4]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/RegisterFile/RF.v:1]
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (9#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/RegisterFile/RF.v:1]
+INFO: [Synth 8-638] synthesizing module 'controler' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/Controler/controler.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/Controler/controler.v:121]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/Controler/controler.v:78]
+INFO: [Synth 8-256] done synthesizing module 'controler' (10#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/Controler/controler.v:1]
+INFO: [Synth 8-638] synthesizing module 'RISC_ALU' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU_ALU/RISC_ALU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'RISC_ALU' (11#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU_ALU/RISC_ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'DataMemo' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DM/DataMemo.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DataMemo' (12#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DM/DataMemo.v:23]
+INFO: [Synth 8-638] synthesizing module 'show_signal' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v:3]
+INFO: [Synth 8-638] synthesizing module 'sel_bits_2_mux__parameterized1' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v:4]
+	Parameter DATA_BITS bound to: 16 - type: integer 
+	Parameter SEL_BITS bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sel_bits_2_mux__parameterized1' (12#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v:4]
+INFO: [Synth 8-638] synthesizing module 'H2D' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/H2D/H2D.v:2]
+INFO: [Synth 8-256] done synthesizing module 'H2D' (13#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/H2D/H2D.v:2]
+INFO: [Synth 8-638] synthesizing module '_7Seg_Driver_Decode' [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/_7Seg_Dirver_Decode.v:3]
+INFO: [Synth 8-256] done synthesizing module '_7Seg_Driver_Decode' (14#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/_7Seg_Dirver_Decode.v:3]
+INFO: [Synth 8-256] done synthesizing module 'show_signal' (15#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v:3]
+WARNING: [Synth 8-3848] Net dmaddr_light in module/entity mips_cpu does not have driver. [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mips_cpu' (16#1) [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:3]
+WARNING: [Synth 8-3331] design mips_cpu has unconnected port dmaddr_light[3]
+WARNING: [Synth 8-3331] design mips_cpu has unconnected port dmaddr_light[2]
+WARNING: [Synth 8-3331] design mips_cpu has unconnected port dmaddr_light[1]
+WARNING: [Synth 8-3331] design mips_cpu has unconnected port dmaddr_light[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 281.652 ; gain = 104.836
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[31] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[30] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[29] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[28] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[27] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[26] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[25] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[24] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[23] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[22] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[21] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[20] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[19] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[18] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[17] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[16] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[15] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[14] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[13] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[12] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[11] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[10] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[9] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[8] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[7] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[6] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[5] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[4] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[3] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[2] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[1] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[0] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[15] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[14] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[13] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[12] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[11] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[10] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[9] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[8] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[7] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[6] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[5] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[4] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[3] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[2] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[1] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[0] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:load to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[15] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:76]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[14] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:76]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[13] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:76]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[12] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:76]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[11] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:76]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[10] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:76]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[9] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:76]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[8] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:76]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[7] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:76]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[6] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:76]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[5] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:76]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[4] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:76]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[3] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:76]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[2] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:76]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[1] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:76]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[0] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:76]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:load to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:76]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[15] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:85]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[14] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:85]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[13] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:85]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[12] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:85]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[11] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:85]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[10] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:85]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[9] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:85]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[8] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:85]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[7] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:85]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[6] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:85]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[5] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:85]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[4] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:85]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[3] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:85]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[2] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:85]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[1] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:85]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[0] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:85]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:load to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:85]
+WARNING: [Synth 8-3295] tying undriven pin sys_callout:count to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:98]
+WARNING: [Synth 8-3295] tying undriven pin halt_d:count to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:104]
+WARNING: [Synth 8-3295] tying undriven pin totalcyc:data[15] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:105]
+WARNING: [Synth 8-3295] tying undriven pin totalcyc:data[14] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:105]
+WARNING: [Synth 8-3295] tying undriven pin totalcyc:data[13] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:105]
+WARNING: [Synth 8-3295] tying undriven pin totalcyc:data[12] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:105]
+WARNING: [Synth 8-3295] tying undriven pin totalcyc:data[11] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:105]
+WARNING: [Synth 8-3295] tying undriven pin totalcyc:data[10] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:105]
+WARNING: [Synth 8-3295] tying undriven pin totalcyc:data[9] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:105]
+WARNING: [Synth 8-3295] tying undriven pin totalcyc:data[8] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:105]
+WARNING: [Synth 8-3295] tying undriven pin totalcyc:data[7] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:105]
+WARNING: [Synth 8-3295] tying undriven pin totalcyc:data[6] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:105]
+WARNING: [Synth 8-3295] tying undriven pin totalcyc:data[5] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:105]
+WARNING: [Synth 8-3295] tying undriven pin totalcyc:data[4] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:105]
+WARNING: [Synth 8-3295] tying undriven pin totalcyc:data[3] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:105]
+WARNING: [Synth 8-3295] tying undriven pin totalcyc:data[2] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:105]
+WARNING: [Synth 8-3295] tying undriven pin totalcyc:data[1] to constant 0 [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:105]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 281.652 ; gain = 104.836
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 591.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 591.266 ; gain = 414.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 591.266 ; gain = 414.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 7 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 7 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 11 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 11 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 12 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 12 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 14 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 14 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 15 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 15 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 16 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 16 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 17 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 17 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 26 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 26 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 58 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 58 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 59 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 59 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 60 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 60 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 61 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 61 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 62 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 62 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 63 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 63 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 64 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 64 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 65 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 65 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 67 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 67 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 68 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 68 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 69 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 69 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 70 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 70 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 71 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 71 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 72 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 72 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 73 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 73 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 74 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 74 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 81 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 81 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 82 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 82 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 591.266 ; gain = 414.449
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "carry" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "carry" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "im_mem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "carry" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "carry" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "carry" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "J" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "JAL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "compare_result1" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "BNE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "BEQ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sw" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lw" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "syscall" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "srl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sub" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sltu" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sra" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nor_cp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "or_cp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "and_cp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addu" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slti" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ori" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "andi" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addiu" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addi" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "beq" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bne" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sll" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'AN_reg' in module 'show_signal'
+INFO: [Synth 8-5546] ROM "AN" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                     Old Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                         11111110
+                 iSTATE0 |                              001 |                         11111101
+                 iSTATE1 |                              010 |                         11111011
+                 iSTATE2 |                              011 |                         11110111
+                 iSTATE3 |                              100 |                         11101111
+                 iSTATE4 |                              101 |                         11011111
+                 iSTATE5 |                              110 |                         10111111
+                 iSTATE6 |                              111 |                         01111111
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'AN_reg' using encoding 'sequential' in module 'show_signal'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 591.266 ; gain = 414.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 5     
+	   4 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 42    
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	 223 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 4     
+	  14 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 4     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 8     
+	   2 Input      8 Bit        Muxes := 24    
+	   5 Input      8 Bit        Muxes := 24    
+	   3 Input      8 Bit        Muxes := 8     
+	   8 Input      8 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 34    
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 9     
+	  14 Input      1 Bit        Muxes := 14    
+	  12 Input      1 Bit        Muxes := 26    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mips_cpu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module counter__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module counter__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module IM 
+Detailed RTL Component Info : 
++---Muxes : 
+	 223 Input     32 Bit        Muxes := 1     
+Module sel_bits_1_mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module sel_bits_2_mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module counter__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module counter__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module counter__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module NPC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 6     
+Module sel_bits_2_mux__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+Module sel_bits_1_mux__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module sel_bits_1_mux__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module RegisterFile 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module controler 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input      1 Bit        Muxes := 12    
+	  12 Input      1 Bit        Muxes := 26    
+Module RISC_ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   4 Input     16 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	  14 Input     32 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 2     
+Module sel_bits_2_mux__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+Module H2D 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 42    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 34    
+Module _7Seg_Driver_Decode 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   5 Input      8 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 1     
+Module show_signal 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 591.266 ; gain = 414.449
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "carry" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "carry" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "carry" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "BEQ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "BNE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "compare_result1" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "ori" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "andi" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sw" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lw" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slti" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addiu" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addi" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "beq" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bne" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP Result0, operation Mode is: A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: Generating DSP Result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: Generating DSP Result0, operation Mode is: A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: Generating DSP Result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+WARNING: [Synth 8-3331] design mips_cpu has unconnected port dmaddr_light[3]
+WARNING: [Synth 8-3331] design mips_cpu has unconnected port dmaddr_light[2]
+WARNING: [Synth 8-3331] design mips_cpu has unconnected port dmaddr_light[1]
+WARNING: [Synth 8-3331] design mips_cpu has unconnected port dmaddr_light[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 591.266 ; gain = 414.449
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 591.266 ; gain = 414.449
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: 
++------------+------------+-----------+----------------------+-------------------+------------------------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives        | Hierarchical Name            | 
++------------+------------+-----------+----------------------+-------------------+------------------------------+
+|mips_cpu    | data_reg   | Implied   | 32 x 32              | RAM32M x 12       | mips_cpu/RegisterFile/ram__3 | 
+|mips_cpu    | dm/mem_reg | Implied   | 1 K x 32             | RAM256X1S x 128   | mips_cpu/ram__5              | 
++------------+------------+-----------+----------------------+-------------------+------------------------------+
+
+Note: The table shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the Distributed RAM name as it appears in the hierarchical module and only part of it is displayed.
+DSP:
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|RISC_ALU    | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|RISC_ALU    | (PCIN>>17)+A*B | No           | 16     | 16     | 30     | 25     | 30     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|RISC_ALU    | A*B            | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|RISC_ALU    | (PCIN>>17)+A*B | No           | 18     | 16     | 31     | 25     | 47     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (my_show/\tube_now_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (my_show/\tube_now_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (DP_reg) is unused and will be removed from module show_signal.
+WARNING: [Synth 8-3332] Sequential element (\tube_now_reg[0] ) is unused and will be removed from module show_signal.
+WARNING: [Synth 8-3332] Sequential element (\dvm/myclk_reg[24] ) is unused and will be removed from module mips_cpu.
+WARNING: [Synth 8-3332] Sequential element (\dvm/myclk_reg[25] ) is unused and will be removed from module mips_cpu.
+WARNING: [Synth 8-3332] Sequential element (\dvm/myclk_reg[26] ) is unused and will be removed from module mips_cpu.
+WARNING: [Synth 8-3332] Sequential element (\dvm/myclk_reg[27] ) is unused and will be removed from module mips_cpu.
+WARNING: [Synth 8-3332] Sequential element (\dvm/myclk_reg[28] ) is unused and will be removed from module mips_cpu.
+WARNING: [Synth 8-3332] Sequential element (\dvm/myclk_reg[29] ) is unused and will be removed from module mips_cpu.
+WARNING: [Synth 8-3332] Sequential element (\dvm/myclk_reg[30] ) is unused and will be removed from module mips_cpu.
+WARNING: [Synth 8-3332] Sequential element (\dvm/myclk_reg[31] ) is unused and will be removed from module mips_cpu.
+WARNING: [Synth 8-3332] Sequential element (\dvm/myclk_reg[32] ) is unused and will be removed from module mips_cpu.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 591.266 ; gain = 414.449
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 591.266 ; gain = 414.449
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 591.266 ; gain = 414.449
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 7 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 7 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 11 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 11 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 12 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 12 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 14 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 14 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 15 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 15 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 16 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 16 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 17 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 17 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 26 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 26 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 58 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 58 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 59 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 59 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 60 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 60 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 61 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 61 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 62 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 62 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 63 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 63 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 64 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 64 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 65 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 65 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 67 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 67 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 68 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 68 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 69 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 69 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 70 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 70 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 71 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 71 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 72 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 72 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 73 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 73 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 74 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 74 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 81 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 81 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 82 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 82 of file F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 642.945 ; gain = 466.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 644.910 ; gain = 468.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 742.117 ; gain = 565.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop halt_d/counter_reg[0] is being inverted and renamed to halt_d/counter_reg[0]_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 742.930 ; gain = 566.113
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 742.930 ; gain = 566.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 742.930 ; gain = 566.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 742.930 ; gain = 566.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 742.930 ; gain = 566.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     2|
+|2     |CARRY4    |   365|
+|3     |DSP48E1   |     3|
+|4     |LUT1      |   192|
+|5     |LUT2      |   294|
+|6     |LUT3      |  1192|
+|7     |LUT4      |   160|
+|8     |LUT5      |   294|
+|9     |LUT6      |   532|
+|10    |MUXF7     |    97|
+|11    |MUXF8     |    18|
+|12    |RAM256X1S |   128|
+|13    |RAM32M    |    12|
+|14    |FDRE      |   169|
+|15    |IBUF      |    10|
+|16    |OBUF      |    16|
+|17    |OBUFT     |     4|
++------+----------+------+
+
+Report Instance Areas: 
++------+----------------------------+------------------------+------+
+|      |Instance                    |Module                  |Cells |
++------+----------------------------+------------------------+------+
+|1     |top                         |                        |  3488|
+|2     |  _5Extlmm                  |sel_bits_1_mux          |     5|
+|3     |  alu                       |RISC_ALU                |    23|
+|4     |  alu_x_sel                 |sel_bits_1_mux_0        |    32|
+|5     |  alu_y_sel                 |sel_bits_2_mux          |    27|
+|6     |  choose_w_t                |sel_bits_2_mux_1        |    31|
+|7     |  dm                        |DataMemo                |   224|
+|8     |  dvm                       |DVM                     |    53|
+|9     |  halt_d                    |counter__parameterized0 |     1|
+|10    |  my_show                   |show_signal             |    43|
+|11    |  next_pc                   |counter                 |  2485|
+|12    |  npc                       |NPC                     |   306|
+|13    |    conditional_count       |counter__parameterized3 |    54|
+|14    |    conditionalsucces_count |counter__parameterized4 |    54|
+|15    |    unconditional_count     |counter__parameterized2 |   198|
+|16    |  rgfile                    |RegisterFile            |   114|
+|17    |  sys_callout               |counter_2               |    40|
+|18    |  totalcyc                  |counter__parameterized1 |    54|
++------+----------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 742.930 ; gain = 566.113
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:00:47 . Memory (MB): peak = 742.930 ; gain = 241.641
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 742.930 ; gain = 566.113
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 518 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 140 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 128 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+125 Infos, 131 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 742.930 ; gain = 551.570
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 742.930 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 14 15:46:50 2018...

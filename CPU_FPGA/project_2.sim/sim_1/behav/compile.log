@@ -1,0 +1,38 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/H2D/H2D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module H2D
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sel_bits_2_mux
+WARNING: [VRFC 10-756] identifier SEL_BITS is used before its declaration [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v:10]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/_7Seg_Dirver_Decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module _7Seg_Driver_Decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_1_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sel_bits_1_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module show_signal
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/IM/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/Controler/controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controler
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/D_Ext/D_Ext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Zero_Ext_5to32
+INFO: [VRFC 10-311] analyzing module Sign_Ext_16to32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU_ALU/RISC_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DM/DataMemo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemo
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DVM
+WARNING: [VRFC 10-1315] redeclaration of ansi port myclk is not allowed [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/RegisterFile/RF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sim_1/imports/new/mips_cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_cpu_tb
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sim_1/imports/new/mips_cpu_tb.v:43]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

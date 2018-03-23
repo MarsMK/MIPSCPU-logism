@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Mar 21 15:20:54 2018
+# Process ID: 4456
+# Log file: C:/Users/123/Desktop/组原课程设计/CPU_FINAL/vivado.log
+# Journal file: C:/Users/123/Desktop/组原课程设计/CPU_FINAL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/123/Desktop/组原课程设计/CPU_FINAL/project_2.xpr
+INFO: [Project 1-313] Project file moved from 'F:/Study_in_class/CPU/CPU/project_2_2/project_2' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 721.531 ; gain = 166.574
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 21 17:33:42 2018...

@@ -1,0 +1,93 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Mar 14 10:15:24 2018
+# Process ID: 3260
+# Log file: F:/Study_in_class/CPU/CPU/project_2/vivado.log
+# Journal file: F:/Study_in_class/CPU/CPU/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Study_in_class/CPU/CPU/project_2/project_2.xpr
+launch_simulation
+source mips_cpu_tb.tcl
+add_wave {{/mips_cpu_tb/t1}} 
+add_wave {{/mips_cpu_tb/t1/dm}} 
+run 3000 ns
+run 3000 ns
+run 3000 ns
+launch_runs synth_1
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+set_property PROGRAM.FILE {F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/mips_cpu.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/mips_cpu.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source mips_cpu_tb.tcl
+add_wave {{/mips_cpu_tb/t1/sys_callout}} 
+run 3000 ns
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/mips_cpu.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/mips_cpu.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/mips_cpu.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/mips_cpu.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/mips_cpu.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/mips_cpu.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+close_hw_target
+close_sim

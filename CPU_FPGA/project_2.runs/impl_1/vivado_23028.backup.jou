@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Mar 14 13:39:37 2018
+# Process ID: 2092
+# Log file: F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.runs/impl_1/mips_cpu.vdi
+# Journal file: F:/Study_in_class/CPU/CPU/project_2_2/project_2/project_2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source mips_cpu.tcl -notrace

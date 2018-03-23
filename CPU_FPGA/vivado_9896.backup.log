@@ -1,0 +1,810 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Mar 14 10:15:24 2018
+# Process ID: 3260
+# Log file: F:/Study_in_class/CPU/CPU/project_2/vivado.log
+# Journal file: F:/Study_in_class/CPU/CPU/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Study_in_class/CPU/CPU/project_2/project_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2015.2/data/ip'.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'mips_cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/Study_in_class/CPU/CPU/project_2/project_2.sim/sim_1/behav'
+"xvlog -m64 --relax -prj mips_cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/H2D/H2D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module H2D
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sel_bits_2_mux
+WARNING: [VRFC 10-756] identifier SEL_BITS is used before its declaration [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v:10]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/_7Seg_Dirver_Decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module _7Seg_Driver_Decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_1_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sel_bits_1_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module show_signal
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/IM/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/Controler/controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controler
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/D_Ext/D_Ext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Zero_Ext_5to32
+INFO: [VRFC 10-311] analyzing module Sign_Ext_16to32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU_ALU/RISC_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DM/DataMemo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemo
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DVM
+WARNING: [VRFC 10-1315] redeclaration of ansi port myclk is not allowed [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/RegisterFile/RF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sim_1/imports/new/mips_cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_cpu_tb
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sim_1/imports/new/mips_cpu_tb.v:43]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Study_in_class/CPU/CPU/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 02fd377e00db4610868c7b59d30cc0b7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mips_cpu_tb_behav xil_defaultlib.mips_cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port rst [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sim_1/imports/new/mips_cpu_tb.v:34]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port load [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:96]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 3 for port tube_num [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v:112]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 3 for port tube_num [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v:121]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 3 for port tube_num [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v:130]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 3 for port tube_num [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v:139]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 3 for port tube_num [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v:148]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 3 for port tube_num [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v:157]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 3 for port tube_num [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v:166]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port total_cycle [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:150]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 3 for port tube_num [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v:103]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/RegisterFile/RF.v" Line 1. Module RegisterFile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/Controler/controler.v" Line 1. Module controler doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/RegisterFile/RF.v" Line 1. Module RegisterFile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/Controler/controler.v" Line 1. Module controler doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.DVM
+Compiling module xil_defaultlib.counter(DATA_BITS=32,MAX_VALUE=3...
+Compiling module xil_defaultlib.IM
+Compiling module xil_defaultlib.sel_bits_1_mux(DATA_BITS=32)
+Compiling module xil_defaultlib.sel_bits_2_mux(DATA_BITS=32)
+Compiling module xil_defaultlib.counter(MAX_VALUE=16'b1111111111...
+Compiling module xil_defaultlib.NPC
+Compiling module xil_defaultlib.Zero_Ext_5to32
+Compiling module xil_defaultlib.Sign_Ext_16to32
+Compiling module xil_defaultlib.sel_bits_2_mux(DATA_BITS=5)
+Compiling module xil_defaultlib.sel_bits_1_mux(DATA_BITS=5)
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.controler
+Compiling module xil_defaultlib.RISC_ALU
+Compiling module xil_defaultlib.DataMemo
+Compiling module xil_defaultlib.sel_bits_2_mux(DATA_BITS=16)
+Compiling module xil_defaultlib.H2D
+Compiling module xil_defaultlib._7Seg_Driver_Decode
+Compiling module xil_defaultlib.show_signal
+Compiling module xil_defaultlib.mips_cpu
+Compiling module xil_defaultlib.mips_cpu_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot mips_cpu_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source F:/Study_in_class/CPU/CPU/project_2/project_2.sim/sim_1/behav/xsim.dir/mips_cpu_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'F:/Study_in_class/CPU/CPU/project_2/project_2.sim/sim_1/behav/xsim.dir/mips_cpu_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Mar 14 10:15:50 2018. For additional details about this file, please refer to the WebTalk help file at D:/Vivado/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar 14 10:15:50 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 726.477 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Study_in_class/CPU/CPU/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mips_cpu_tb_behav -key {Behavioral:sim_1:Functional:mips_cpu_tb} -tclbatch {mips_cpu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source mips_cpu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mips_cpu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 758.055 ; gain = 31.578
+add_wave {{/mips_cpu_tb/t1}} 
+add_wave {{/mips_cpu_tb/t1/dm}} 
+run 3000 ns
+run 3000 ns
+run 3000 ns
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v" into library work [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/D_Ext/D_Ext.v" into library work [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/D_Ext/D_Ext.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DM/DataMemo.v" into library work [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DM/DataMemo.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/H2D/H2D.v" into library work [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/H2D/H2D.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/IM/IM.v" into library work [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/IM/IM.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v" into library work [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v" into library work [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/RegisterFile/RF.v" into library work [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/RegisterFile/RF.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU_ALU/RISC_ALU.v" into library work [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU_ALU/RISC_ALU.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/_7Seg_Dirver_Decode.v" into library work [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/_7Seg_Dirver_Decode.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/Controler/controler.v" into library work [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/Controler/controler.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v" into library work [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_1_mux.v" into library work [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_1_mux.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v" into library work [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v" into library work [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v:1]
+[Wed Mar 14 10:39:28 2018] Launched synth_1...
+Run output will be captured here: F:/Study_in_class/CPU/CPU/project_2/project_2.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: mips_cpu
+WARNING: [Synth 8-2507] parameter declaration becomes local in sel_bits_2_mux with formal parameter declaration list [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v:14]
+WARNING: [Synth 8-2611] redeclaration of ansi port myclk is not allowed [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v:27]
+WARNING: [Synth 8-992] SyscallOut is already implicitly declared earlier [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:154]
+WARNING: [Synth 8-992] halt is already implicitly declared earlier [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:157]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:03:46 ; elapsed = 00:26:25 . Memory (MB): peak = 838.441 ; gain = 651.395
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mips_cpu' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:3]
+	Parameter FREE1 bound to: 0 - type: integer 
+	Parameter D2 bound to: 5'b11111 
+	Parameter FREE2 bound to: 5'b00000 
+	Parameter v0_reg bound to: 5'b00010 
+	Parameter display_reg bound to: 5'b00100 
+INFO: [Synth 8-638] synthesizing module 'DVM' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DVM' (1#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v:23]
+INFO: [Synth 8-638] synthesizing module 'counter' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+	Parameter DATA_BITS bound to: 32 - type: integer 
+	Parameter MAX_VALUE bound to: -1 - type: integer 
+ERROR: [Synth 8-91] ambiguous clock in event control [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:26]
+ERROR: [Synth 8-285] failed synthesizing module 'counter' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+ERROR: [Synth 8-285] failed synthesizing module 'mips_cpu' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:46 ; elapsed = 00:26:26 . Memory (MB): peak = 863.602 ; gain = 676.555
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+4 Infos, 4 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: mips_cpu
+WARNING: [Synth 8-2507] parameter declaration becomes local in sel_bits_2_mux with formal parameter declaration list [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v:14]
+WARNING: [Synth 8-2611] redeclaration of ansi port myclk is not allowed [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v:27]
+WARNING: [Synth 8-992] SyscallOut is already implicitly declared earlier [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:154]
+WARNING: [Synth 8-992] halt is already implicitly declared earlier [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:157]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:03:55 ; elapsed = 00:26:58 . Memory (MB): peak = 866.793 ; gain = 679.746
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mips_cpu' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:3]
+	Parameter FREE1 bound to: 0 - type: integer 
+	Parameter D2 bound to: 5'b11111 
+	Parameter FREE2 bound to: 5'b00000 
+	Parameter v0_reg bound to: 5'b00010 
+	Parameter display_reg bound to: 5'b00100 
+INFO: [Synth 8-638] synthesizing module 'DVM' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DVM' (1#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v:23]
+INFO: [Synth 8-638] synthesizing module 'counter' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+	Parameter DATA_BITS bound to: 32 - type: integer 
+	Parameter MAX_VALUE bound to: -1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter' (2#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+WARNING: [Synth 8-350] instance 'next_pc' of module 'counter' requires 8 connections, but only 6 given [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:96]
+INFO: [Synth 8-638] synthesizing module 'IM' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/IM/IM.v:23]
+INFO: [Synth 8-256] done synthesizing module 'IM' (3#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/IM/IM.v:23]
+INFO: [Synth 8-638] synthesizing module 'NPC' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:3]
+INFO: [Synth 8-638] synthesizing module 'sel_bits_1_mux' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_1_mux.v:4]
+	Parameter DATA_BITS bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sel_bits_1_mux' (4#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_1_mux.v:4]
+INFO: [Synth 8-638] synthesizing module 'sel_bits_2_mux' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v:4]
+	Parameter DATA_BITS bound to: 32 - type: integer 
+	Parameter SEL_BITS bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sel_bits_2_mux' (5#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v:4]
+WARNING: [Synth 8-350] instance 'choose_NextPC' of module 'sel_bits_2_mux' requires 6 connections, but only 5 given [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized0' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+	Parameter DATA_BITS bound to: 16 - type: integer 
+	Parameter MAX_VALUE bound to: 16'b1111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized0' (5#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+WARNING: [Synth 8-350] instance 'unconditional_count' of module 'counter' requires 8 connections, but only 4 given [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized1' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+	Parameter DATA_BITS bound to: 16 - type: integer 
+	Parameter MAX_VALUE bound to: 16'b1111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized1' (5#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+WARNING: [Synth 8-350] instance 'conditional_count' of module 'counter' requires 8 connections, but only 4 given [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:75]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized2' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+	Parameter DATA_BITS bound to: 16 - type: integer 
+	Parameter MAX_VALUE bound to: 16'b1111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized2' (5#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+WARNING: [Synth 8-350] instance 'conditionalsucces_count' of module 'counter' requires 8 connections, but only 4 given [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:83]
+INFO: [Synth 8-256] done synthesizing module 'NPC' (6#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:3]
+WARNING: [Synth 8-350] instance 'npc' of module 'NPC' requires 12 connections, but only 11 given [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:100]
+INFO: [Synth 8-638] synthesizing module 'Zero_Ext_5to32' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/D_Ext/D_Ext.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Zero_Ext_5to32' (7#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/D_Ext/D_Ext.v:3]
+INFO: [Synth 8-638] synthesizing module 'Sign_Ext_16to32' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/D_Ext/D_Ext.v:11]
+INFO: [Synth 8-256] done synthesizing module 'Sign_Ext_16to32' (8#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/D_Ext/D_Ext.v:11]
+INFO: [Synth 8-638] synthesizing module 'sel_bits_2_mux__parameterized0' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v:4]
+	Parameter DATA_BITS bound to: 5 - type: integer 
+	Parameter SEL_BITS bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sel_bits_2_mux__parameterized0' (8#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v:4]
+INFO: [Synth 8-638] synthesizing module 'sel_bits_1_mux__parameterized0' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_1_mux.v:4]
+	Parameter DATA_BITS bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sel_bits_1_mux__parameterized0' (8#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_1_mux.v:4]
+INFO: [Synth 8-638] synthesizing module 'sel_bits_1_mux__parameterized1' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_1_mux.v:4]
+	Parameter DATA_BITS bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sel_bits_1_mux__parameterized1' (8#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_1_mux.v:4]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/RegisterFile/RF.v:1]
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (9#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/RegisterFile/RF.v:1]
+INFO: [Synth 8-638] synthesizing module 'controler' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/Controler/controler.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/Controler/controler.v:121]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/Controler/controler.v:78]
+INFO: [Synth 8-256] done synthesizing module 'controler' (10#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/Controler/controler.v:1]
+INFO: [Synth 8-638] synthesizing module 'RISC_ALU' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU_ALU/RISC_ALU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'RISC_ALU' (11#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU_ALU/RISC_ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'DataMemo' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DM/DataMemo.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DataMemo' (12#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DM/DataMemo.v:23]
+INFO: [Synth 8-638] synthesizing module 'show_signal' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v:3]
+INFO: [Synth 8-638] synthesizing module 'sel_bits_2_mux__parameterized1' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v:4]
+	Parameter DATA_BITS bound to: 16 - type: integer 
+	Parameter SEL_BITS bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sel_bits_2_mux__parameterized1' (12#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v:4]
+INFO: [Synth 8-638] synthesizing module 'H2D' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/H2D/H2D.v:2]
+INFO: [Synth 8-256] done synthesizing module 'H2D' (13#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/H2D/H2D.v:2]
+INFO: [Synth 8-638] synthesizing module '_7Seg_Driver_Decode' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/_7Seg_Dirver_Decode.v:3]
+INFO: [Synth 8-256] done synthesizing module '_7Seg_Driver_Decode' (14#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/_7Seg_Dirver_Decode.v:3]
+INFO: [Synth 8-256] done synthesizing module 'show_signal' (15#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v:3]
+WARNING: [Synth 8-350] instance 'sys_callout' of module 'counter' requires 8 connections, but only 6 given [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:155]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized3' [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+	Parameter DATA_BITS bound to: 16 - type: integer 
+	Parameter MAX_VALUE bound to: 16'b1111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized3' (15#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v:4]
+WARNING: [Synth 8-350] instance 'totalcyc' of module 'counter' requires 8 connections, but only 6 given [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:160]
+WARNING: [Synth 8-3848] Net dmaddr_light in module/entity mips_cpu does not have driver. [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:11]
+WARNING: [Synth 8-3848] Net SyscallOut in module/entity mips_cpu does not have driver. [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:151]
+WARNING: [Synth 8-3848] Net DataMemory in module/entity mips_cpu does not have driver. [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:82]
+INFO: [Synth 8-256] done synthesizing module 'mips_cpu' (16#1) [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:3]
+WARNING: [Synth 8-3331] design mips_cpu has unconnected port dmaddr_light[3]
+WARNING: [Synth 8-3331] design mips_cpu has unconnected port dmaddr_light[2]
+WARNING: [Synth 8-3331] design mips_cpu has unconnected port dmaddr_light[1]
+WARNING: [Synth 8-3331] design mips_cpu has unconnected port dmaddr_light[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:56 ; elapsed = 00:26:59 . Memory (MB): peak = 869.477 ; gain = 682.430
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[31] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[30] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[29] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[28] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[27] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[26] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[25] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[24] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[23] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[22] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[21] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[20] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[19] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[18] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[17] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[16] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[15] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[14] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[13] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[12] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[11] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[10] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[9] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[8] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[7] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[6] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[5] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[4] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[3] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[2] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[1] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin choose_NextPC:d3[0] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:58]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[15] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[14] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[13] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[12] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[11] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[10] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[9] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[8] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[7] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[6] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[5] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[4] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[3] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[2] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[1] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:data[0] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:load to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin unconditional_count:halt to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:67]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[15] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:75]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[14] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:75]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[13] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:75]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[12] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:75]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[11] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:75]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[10] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:75]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[9] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:75]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[8] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:75]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[7] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:75]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[6] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:75]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[5] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:75]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[4] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:75]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[3] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:75]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[2] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:75]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[1] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:75]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:data[0] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:75]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:load to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:75]
+WARNING: [Synth 8-3295] tying undriven pin conditional_count:halt to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:75]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[15] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:83]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[14] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:83]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[13] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:83]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[12] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:83]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[11] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:83]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[10] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:83]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[9] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:83]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[8] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:83]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[7] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:83]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[6] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:83]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[5] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:83]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[4] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:83]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[3] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:83]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[2] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:83]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[1] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:83]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:data[0] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:83]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:load to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:83]
+WARNING: [Synth 8-3295] tying undriven pin conditionalsucces_count:halt to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v:83]
+WARNING: [Synth 8-3295] tying undriven pin next_pc:count to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:96]
+WARNING: [Synth 8-3295] tying undriven pin my_show:SyscallOut[31] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:150]
+WARNING: [Synth 8-3295] tying undriven pin my_show:SyscallOut[30] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:150]
+WARNING: [Synth 8-3295] tying undriven pin my_show:SyscallOut[29] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:150]
+WARNING: [Synth 8-3295] tying undriven pin my_show:SyscallOut[28] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:150]
+WARNING: [Synth 8-3295] tying undriven pin my_show:SyscallOut[27] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:150]
+WARNING: [Synth 8-3295] tying undriven pin my_show:SyscallOut[26] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:150]
+WARNING: [Synth 8-3295] tying undriven pin my_show:SyscallOut[25] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:150]
+WARNING: [Synth 8-3295] tying undriven pin my_show:SyscallOut[24] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:150]
+WARNING: [Synth 8-3295] tying undriven pin my_show:SyscallOut[23] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:150]
+WARNING: [Synth 8-3295] tying undriven pin my_show:SyscallOut[22] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:150]
+WARNING: [Synth 8-3295] tying undriven pin my_show:SyscallOut[21] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:150]
+WARNING: [Synth 8-3295] tying undriven pin my_show:SyscallOut[20] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:150]
+WARNING: [Synth 8-3295] tying undriven pin my_show:SyscallOut[19] to constant 0 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:150]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:56 ; elapsed = 00:26:59 . Memory (MB): peak = 869.477 ; gain = 682.430
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/constrs_1/imports/MIPS_CPU/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-141] Inserted 16 OBUFs to IO ports without IO buffers.
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:04:10 ; elapsed = 00:27:14 . Memory (MB): peak = 1174.727 ; gain = 987.680
+55 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1174.727 ; gain = 307.934
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Mar 14 10:42:47 2018] Launched synth_1...
+Run output will be captured here: F:/Study_in_class/CPU/CPU/project_2/project_2.runs/synth_1/runme.log
+[Wed Mar 14 10:42:47 2018] Launched impl_1...
+Run output will be captured here: F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292747757A
+set_property PROGRAM.FILE {F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/mips_cpu.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/mips_cpu.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1214.914 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'mips_cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/Study_in_class/CPU/CPU/project_2/project_2.sim/sim_1/behav'
+"xvlog -m64 --relax -prj mips_cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/H2D/H2D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module H2D
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sel_bits_2_mux
+WARNING: [VRFC 10-756] identifier SEL_BITS is used before its declaration [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v:10]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/_7Seg_Dirver_Decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module _7Seg_Driver_Decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_1_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sel_bits_1_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module show_signal
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/IM/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/Controler/controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controler
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/D_Ext/D_Ext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Zero_Ext_5to32
+INFO: [VRFC 10-311] analyzing module Sign_Ext_16to32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU_ALU/RISC_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DM/DataMemo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemo
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DVM
+WARNING: [VRFC 10-1315] redeclaration of ansi port myclk is not allowed [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/RegisterFile/RF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_cpu
+ERROR: [VRFC 10-2071] SyscallOut is already implicitly declared on line 151 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:154]
+ERROR: [VRFC 10-2071] halt is already implicitly declared on line 96 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:157]
+ERROR: [VRFC 10-1040] module mips_cpu ignored due to previous errors [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:3]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'F:/Study_in_class/CPU/CPU/project_2/project_2.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'mips_cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/Study_in_class/CPU/CPU/project_2/project_2.sim/sim_1/behav'
+"xvlog -m64 --relax -prj mips_cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/H2D/H2D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module H2D
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sel_bits_2_mux
+WARNING: [VRFC 10-756] identifier SEL_BITS is used before its declaration [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v:10]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/_7Seg_Dirver_Decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module _7Seg_Driver_Decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_1_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sel_bits_1_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module show_signal
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/IM/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/Controler/controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controler
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/D_Ext/D_Ext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Zero_Ext_5to32
+INFO: [VRFC 10-311] analyzing module Sign_Ext_16to32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU_ALU/RISC_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DM/DataMemo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemo
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DVM
+WARNING: [VRFC 10-1315] redeclaration of ansi port myclk is not allowed [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/RegisterFile/RF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_cpu
+ERROR: [VRFC 10-2071] SyscallOut is already implicitly declared on line 152 [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:155]
+ERROR: [VRFC 10-1040] module mips_cpu ignored due to previous errors [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:3]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'F:/Study_in_class/CPU/CPU/project_2/project_2.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'mips_cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/Study_in_class/CPU/CPU/project_2/project_2.sim/sim_1/behav'
+"xvlog -m64 --relax -prj mips_cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/H2D/H2D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module H2D
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sel_bits_2_mux
+WARNING: [VRFC 10-756] identifier SEL_BITS is used before its declaration [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v:10]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/_7Seg_Dirver_Decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module _7Seg_Driver_Decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_1_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sel_bits_1_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module show_signal
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/IM/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/Controler/controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controler
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/D_Ext/D_Ext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Zero_Ext_5to32
+INFO: [VRFC 10-311] analyzing module Sign_Ext_16to32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU_ALU/RISC_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DM/DataMemo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemo
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DVM
+WARNING: [VRFC 10-1315] redeclaration of ansi port myclk is not allowed [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/RegisterFile/RF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sim_1/imports/new/mips_cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_cpu_tb
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sim_1/imports/new/mips_cpu_tb.v:43]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Study_in_class/CPU/CPU/project_2/project_2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Study_in_class/CPU/CPU/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 02fd377e00db4610868c7b59d30cc0b7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mips_cpu_tb_behav xil_defaultlib.mips_cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port rst [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sim_1/imports/new/mips_cpu_tb.v:34]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port load [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:97]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port count [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:102]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port load [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:106]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 3 for port tube_num [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v:112]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 3 for port tube_num [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v:121]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 3 for port tube_num [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v:130]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 3 for port tube_num [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v:139]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 3 for port tube_num [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v:148]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 3 for port tube_num [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v:157]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 3 for port tube_num [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v:166]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port total_cycle [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v:160]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 3 for port tube_num [F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v:103]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/RegisterFile/RF.v" Line 1. Module RegisterFile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/Controler/controler.v" Line 1. Module controler doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/RegisterFile/RF.v" Line 1. Module RegisterFile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Study_in_class/CPU/CPU/project_2/project_2.srcs/sources_1/imports/MIPS_CPU/Controler/controler.v" Line 1. Module controler doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter(DATA_BITS=32,MAX_VALUE=3...
+Compiling module xil_defaultlib.counter(MAX_VALUE=16'b1111111111...
+Compiling module xil_defaultlib.DVM
+Compiling module xil_defaultlib.IM
+Compiling module xil_defaultlib.sel_bits_1_mux(DATA_BITS=32)
+Compiling module xil_defaultlib.sel_bits_2_mux(DATA_BITS=32)
+Compiling module xil_defaultlib.NPC
+Compiling module xil_defaultlib.Zero_Ext_5to32
+Compiling module xil_defaultlib.Sign_Ext_16to32
+Compiling module xil_defaultlib.sel_bits_2_mux(DATA_BITS=5)
+Compiling module xil_defaultlib.sel_bits_1_mux(DATA_BITS=5)
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.controler
+Compiling module xil_defaultlib.RISC_ALU
+Compiling module xil_defaultlib.DataMemo
+Compiling module xil_defaultlib.sel_bits_2_mux(DATA_BITS=16)
+Compiling module xil_defaultlib.H2D
+Compiling module xil_defaultlib._7Seg_Driver_Decode
+Compiling module xil_defaultlib.show_signal
+Compiling module xil_defaultlib.mips_cpu
+Compiling module xil_defaultlib.mips_cpu_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot mips_cpu_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source F:/Study_in_class/CPU/CPU/project_2/project_2.sim/sim_1/behav/xsim.dir/mips_cpu_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'F:/Study_in_class/CPU/CPU/project_2/project_2.sim/sim_1/behav/xsim.dir/mips_cpu_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Mar 14 11:00:42 2018. For additional details about this file, please refer to the WebTalk help file at D:/Vivado/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar 14 11:00:42 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1214.914 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Study_in_class/CPU/CPU/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mips_cpu_tb_behav -key {Behavioral:sim_1:Functional:mips_cpu_tb} -tclbatch {mips_cpu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source mips_cpu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mips_cpu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1214.914 ; gain = 0.000
+add_wave {{/mips_cpu_tb/t1/sys_callout}} 
+run 3000 ns
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Mar 14 11:02:04 2018] Launched synth_1...
+Run output will be captured here: F:/Study_in_class/CPU/CPU/project_2/project_2.runs/synth_1/runme.log
+[Wed Mar 14 11:02:04 2018] Launched impl_1...
+Run output will be captured here: F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Mar 14 11:02:29 2018] Launched synth_1...
+Run output will be captured here: F:/Study_in_class/CPU/CPU/project_2/project_2.runs/synth_1/runme.log
+[Wed Mar 14 11:02:29 2018] Launched impl_1...
+Run output will be captured here: F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/mips_cpu.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Mar 14 11:07:16 2018] Launched synth_1...
+Run output will be captured here: F:/Study_in_class/CPU/CPU/project_2/project_2.runs/synth_1/runme.log
+[Wed Mar 14 11:07:16 2018] Launched impl_1...
+Run output will be captured here: F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/mips_cpu.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Mar 14 11:11:33 2018] Launched synth_1...
+Run output will be captured here: F:/Study_in_class/CPU/CPU/project_2/project_2.runs/synth_1/runme.log
+[Wed Mar 14 11:11:33 2018] Launched impl_1...
+Run output will be captured here: F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/mips_cpu.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Mar 14 11:16:40 2018] Launched synth_1...
+Run output will be captured here: F:/Study_in_class/CPU/CPU/project_2/project_2.runs/synth_1/runme.log
+[Wed Mar 14 11:16:40 2018] Launched impl_1...
+Run output will be captured here: F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/mips_cpu.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Mar 14 11:22:29 2018] Launched synth_1...
+Run output will be captured here: F:/Study_in_class/CPU/CPU/project_2/project_2.runs/synth_1/runme.log
+[Wed Mar 14 11:22:29 2018] Launched impl_1...
+Run output will be captured here: F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/mips_cpu.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Mar 14 11:30:34 2018] Launched synth_1...
+Run output will be captured here: F:/Study_in_class/CPU/CPU/project_2/project_2.runs/synth_1/runme.log
+[Wed Mar 14 11:30:34 2018] Launched impl_1...
+Run output will be captured here: F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/mips_cpu.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Mar 14 11:36:15 2018] Launched synth_1...
+Run output will be captured here: F:/Study_in_class/CPU/CPU/project_2/project_2.runs/synth_1/runme.log
+[Wed Mar 14 11:36:15 2018] Launched impl_1...
+Run output will be captured here: F:/Study_in_class/CPU/CPU/project_2/project_2.runs/impl_1/runme.log
+reset_run synth_1
+ERROR: [Labtools 27-3175] Target jsn-Nexys4DDR-210292747757A is no longer available.
+Please use disconnect_hw_server to close the current server connection. Check cable connectivity and that the target board is powered up.
+Restart the hw_server application running on host localhost, port 3121 and then use connect_hw_server to re-establish connection to target.
+close_hw_target
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost/xilinx_tcf/Digilent/210292747757A
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1235.059 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 14 11:53:35 2018...

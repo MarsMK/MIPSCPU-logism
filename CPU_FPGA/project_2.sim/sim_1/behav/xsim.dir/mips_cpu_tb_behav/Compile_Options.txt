@@ -1,0 +1,1 @@
+-wto "02fd377e00db4610868c7b59d30cc0b7" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "mips_cpu_tb_behav" "xil_defaultlib.mips_cpu_tb" "xil_defaultlib.glbl" -log "elaborate.log" 

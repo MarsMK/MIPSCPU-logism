@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/imports/MIPS_CPU/H2D/H2D.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_2_mux.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/_7Seg_Dirver_Decode.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/imports/MIPS_CPU/MUX/sel_bits_1_mux.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/imports/MIPS_CPU/counter/counter.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/imports/MIPS_CPU/show_signal/show_signal.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/imports/MIPS_CPU/IM/IM.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/imports/MIPS_CPU/Controler/controler.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/imports/MIPS_CPU/D_Ext/D_Ext.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/imports/MIPS_CPU/CPU_ALU/RISC_ALU.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/imports/MIPS_CPU/DM/DataMemo.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/imports/MIPS_CPU/DVM/DVM.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/imports/MIPS_CPU/NPC/NPC.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/imports/MIPS_CPU/RegisterFile/RF.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/imports/MIPS_CPU/CPU/MIPS_CPU.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sim_1/imports/new/mips_cpu_tb.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
